@@ -25,6 +25,7 @@ class FragmentChangePassword : BaseFragment(),
     override fun onViewReady(view: View) {
         showLoadingProgress()
         registerClickListener(view)
+        dismissLoadingProgress()
     }
 
     override fun oldPassInvalid() {
